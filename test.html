@@ -1,0 +1,45 @@
+<header class="Header">
+    <a href="">
+        <img src="images/logo.png" alt="" />
+    </a>
+    <ul class="Header__List">
+        <li><a href="">横並びヘッダー</a></li>
+        <li><a href="">商品一覧</a></li>
+        <li><a href="">お知らせ</a></li>
+        <li><a href="">なんやかんや</a></li>
+        <li><a href="">お問い合わせ</a></li>
+    </ul>
+</header>
+
+<style>
+    img {
+        max-width: 20%;
+    }
+    
+    .Header {
+        /* display: flex;
+        justify-content: space-between; */
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 20px;
+    }
+    
+    .Header__List {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: column;
+        column-gap: 2px;
+        justify-self: end;
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        /* list-style: none; */
+    }
+    
+    .Header__List a {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+</style>

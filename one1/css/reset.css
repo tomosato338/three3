@@ -1,0 +1,89 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+
+/* 普通だと足し算になるので、入れとくべき。widthの中にpaddingを入れる */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+figure,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+
+/* 下線を取ってあげる。aタグはインラインなので、marginつかなくなるのでdisplay;block入れておく。 */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+caption,
+th {
+    text-align: left;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* これ大事 */
